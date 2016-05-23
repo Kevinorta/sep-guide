@@ -45,12 +45,21 @@
 
         });
     </script>
+
     <script>
-        var animateName = "animated  tada";
         var animateEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+
         $(function() {
 
-            $("#triferg").hover(function() {
+            $("#triferg").on("click", function() {
+                var animateN = ["tada", "flip"];
+                var i = 0;
+                var animateName = "";
+
+                for (; animateN[i];) {
+                    animateName += cars[i] + ;
+                    i++;
+                }
                 $("#triferg").addClass(animateName).one(animateEnd, function() {
                     $(this).removeClass(animateName);
                 });
