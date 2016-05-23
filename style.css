@@ -2,22 +2,30 @@ body {
  background-color: #CEE4F3;
 }
 
-
-
 @font-face {
  font-family: Palace;
  src: url('fonts/Palace.otf');
 }
 
-
-
-h1 { font-family: Palace, sans-serif;
-
+h1 {
+ font-family: Palace, sans-serif;
 }
 
 html,
 body {
  height: 100%;
+}
+
+.full-w {
+ width: 100%;
+}
+
+.full-h {
+ height: 100%;
+}
+
+.headd {
+ margin-top: 5%;
 }
 
 footer {
@@ -31,6 +39,18 @@ footer {
 .full-h {
  height: 100%;
 }
+
+.transparentH {
+ background: rgba(0, 0, 0, .3);
+}
+
+#home {
+ background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, 0.3)), url("img/class.JPG");
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: table;
+}
+
 
 .vert-center {
  display: table-cell;
