@@ -19,6 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!--CSS Style Sheet -->
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
 
     <script>
         $(document).ready(function() {
@@ -44,12 +45,23 @@
 
         });
     </script>
+    <script>
+        var animateName = "animated  tada";
+        var animateEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+        $(function() {
+
+            $("#triferg").hover(function() {
+                $("#triferg").addClass(animateName).one(animateEnd, function() {
+                    $(this).removeClass(animateName);
+                });
+            })
+        });
+    </script>
 </head>
 
 <body>
 
     <nav class="navbar navbar-default navbar-fixed-top">
-
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -61,27 +73,35 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav pillz">
-                    <li><a href="#">sec</a></li>
-                    <li><a href="#">sec</a></li>
-                    <li><a href="#">sec</a></li>
+                    <li><a href="#ovr">Overview</a></li>
+                    <li><a href="#cur">Curriculum</a></li>
+                    <li><a href="#tips">Tips</a></li>
                 </ul>
             </div>
         </div>
+
     </nav>
-    
-    
 
-        <div class="full-w full-h" id="home">
-            <div class="text-center headd">
-                <img src="img/sep.png">
-            </div>
+
+
+    <div class="full-w full-h" id="home">
+        <div class="text-center headd">
+            <img id="triferg" src="img/sep.png">
         </div>
+    </div>
 
-<div class="col-md-12">
+    <div class="col-md-12">
 
         <div class="col-md-12">
+            <h1 id="ovr">Overview</h1>
+            <div class="container">
+                <div class="jumbotron">
+                    <h2>SEP is a great program that opens a lot of opportunities in software engineering. Throughout their 4 years in the SEP program, students will learn many fundementals in software and coding.They will also learn the importance of planning, teamwork, and
+            independent learning.</h2>
+                </div>
 
-            <h1>Curriculum</h1>
+            </div>
+            <h1 id="cur">Curriculum</h1>
             <div class="panel-group col-md-12" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingOne">
@@ -296,9 +316,49 @@
 
         </div>
     </div>
-    
+
+    <!--TIPS-->
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <h1 id="tips">Tips</h1>
+            <h2>To being a better student </h2>
+            <div class="text-center" id="landing">
+                <div class="col-sm-6 do">
+                    <h1>Do's</h1>
+                    <h2>Show up on time and ready to code</h2>
+                    <br>
+                    <h2>Have things ready to turn in</h2>
+                    <br>
+                    <h2>Focus on the Syntax you're writing</h2>
+                    <br>
+                    <h2>Activley participate and ask questions</h2>
+                    <br>
+                    <h2>Pay attention in class</h2>
 
 
+                </div>
+                <div class="col-sm-6 dont">
+                    <h1>Don'ts</h1>
+                    <h2>BE LATE TO 1ST PERIOD!</h2>
+                    <footer>Latness can account to detention</footer>
+                    <h2>Hand in things late</h2>
+                    <footer>That means half credit</footer>
+                    <h2>Be a distraction</h2>
+                    <br>
+                    <h2>Talk when the teacher is talking</h2>
+                    <br>
+                    <h2>Be Kevin and Josue</h2>
+                </div>
+            </div>
+        </div>
+        <h2>And make sure to have fun while coding, because you're allowed to be creative and build anything you want as long as you finish all the requirments!
+        </h2>
+        <br>
+        <h2>
+        "Done is better than perfect"
+        </h2>
+        <footer>-Mr Mueller</footer>
+    </div>
 
 
 
