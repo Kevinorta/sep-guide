@@ -2,17 +2,27 @@ body {
  background-color: #CEE4F3;
 }
 
-
-
 @font-face {
  font-family: Palace;
  src: url('fonts/Palace.otf');
 }
 
+.carPic {
+ max-height: 400px;
+ margin: auto;
+}
 
+.carousel-caption {
+ color: black;
+}
 
-h1 { font-family: Palace, sans-serif;
+#9grCar {
+ display: none;
+ visibility: hidden;
+}
 
+h1 {
+ font-family: Palace, sans-serif;
 }
 
 html,
