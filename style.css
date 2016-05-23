@@ -7,6 +7,7 @@ body {
  src: url('fonts/Palace.otf');
 }
 
+
 .carPic {
  max-height: 400px;
  margin: auto;
@@ -30,6 +31,18 @@ body {
  height: 100%;
 }
 
+.full-w {
+ width: 100%;
+}
+
+.full-h {
+ height: 100%;
+}
+
+.headd {
+ margin-top: 5%;
+}
+
 footer {
  font-size: 30px;
 }
@@ -41,6 +54,18 @@ footer {
 .full-h {
  height: 100%;
 }
+
+.transparentH {
+ background: rgba(0, 0, 0, .3);
+}
+
+#home {
+ background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, 0.3)), url("img/class.JPG");
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: table;
+}
+
 
 .vert-center {
  display: table-cell;
