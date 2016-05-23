@@ -7,6 +7,21 @@ body {
  src: url('fonts/Palace.otf');
 }
 
+
+.carPic {
+ max-height: 400px;
+ margin: auto;
+}
+
+.carousel-caption {
+ color: black;
+}
+
+#9grCar {
+ display: none;
+ visibility: hidden;
+}
+
 h1 {
  font-family: Palace, sans-serif;
 }
